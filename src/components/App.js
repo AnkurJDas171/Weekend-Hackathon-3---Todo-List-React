@@ -4,7 +4,7 @@ import Button from "./Button";
 import TextArea from "./TextArea";
 import List from "./List";
 
-function App() {
+export default function App() {
   const [listItemEntry, setListItemEntry] = React.useState("");
   const [taskList, setTaskList] = React.useState([]);
 
@@ -52,8 +52,8 @@ function App() {
   };
 
   const handelSaveEdit = (index) => {
-		const taskListCopy = [...taskList];
-		if (taskListCopy[index].editValue === "") {
+    const taskListCopy = [...taskList];
+    if (taskListCopy[index].editValue === "") {
       //taskListCopy[index].edit = false;
       return;
     }
@@ -90,5 +90,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
