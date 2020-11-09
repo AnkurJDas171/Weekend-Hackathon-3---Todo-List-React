@@ -52,7 +52,11 @@ function App() {
   };
 
   const handelSaveEdit = (index) => {
-    const taskListCopy = [...taskList];
+		const taskListCopy = [...taskList];
+		if (taskListCopy[index].editValue === "") {
+      //taskListCopy[index].edit = false;
+      return;
+    }
     taskListCopy[index].task = taskListCopy[index].editValue;
     taskListCopy[index].editValue = "";
     taskListCopy[index].edit = false;
