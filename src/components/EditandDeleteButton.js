@@ -13,8 +13,8 @@ export default function EnDButtons({
     <>
       {!displayEditTextArea && (
         <>
-          <button onClick={() => handelEdit(elementIndex)}>edit</button>
-          <button onClick={() => handelDelete(elementIndex)}>delete</button>
+          <button className="edit" onClick={() => handelEdit(elementIndex)}>edit</button>
+          <button className="delete" onClick={() => handelDelete(elementIndex)}>delete</button>
         </>
       )}
 
