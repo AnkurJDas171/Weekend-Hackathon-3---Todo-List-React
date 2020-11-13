@@ -9,13 +9,13 @@ export default function App() {
   const [taskList, setTaskList] = React.useState([]);
 
   const handelSaveButton = () => {
-    if (listItemEntry === "" || listItemEntry.trim() === "") {
+    let listItemEntryCopy = listItemEntry;
+    if (listItemEntryCopy === "") {
       return;
     }
 
     //console.log("button called");
 
-    let listItemEntryCopy = listItemEntry;
     const listCopy = [...taskList];
     const elementObj = { task: "", edit: false, editValue: "" };
 
@@ -30,6 +30,9 @@ export default function App() {
 
   const handelListEntry = (value) => {
     let listItemEntryCopy = listItemEntry;
+    if (value === " ") {
+      return;
+    }
     listItemEntryCopy = value;
     setListItemEntry(listItemEntryCopy);
   };
