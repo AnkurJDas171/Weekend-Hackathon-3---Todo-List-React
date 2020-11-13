@@ -9,7 +9,7 @@ export default function App() {
   const [taskList, setTaskList] = React.useState([]);
 
   const handelSaveButton = () => {
-    if (listItemEntry === "") {
+    if (listItemEntry === "" || listItemEntry.trim() === "") {
       return;
     }
 
