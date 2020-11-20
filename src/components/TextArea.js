@@ -7,10 +7,10 @@ export default function TextArea({ handelText, displayText }) {
       <textarea
         id="task"
         name="task"
-        // value={displayText}
-        onChange={(event) => {
-          handelText(event.target.value);
-        }}
+        value={displayText}
+        // onChange={(event) => {
+        //   handelText(event.target.value);
+        // }}
       ></textarea>
     </>
   );
