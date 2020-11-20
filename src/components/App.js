@@ -29,11 +29,11 @@ export default function App() {
   };
 
   const handelListEntry = (value) => {
-    let listItemEntryCopy = listItemEntry;
+    //let listItemEntryCopy = listItemEntry;
     if (value === " ") {
       return;
     }
-    listItemEntryCopy = value;
+    let listItemEntryCopy = value;
     setListItemEntry(listItemEntryCopy);
   };
 
