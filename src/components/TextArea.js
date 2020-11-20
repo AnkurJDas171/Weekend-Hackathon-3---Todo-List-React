@@ -7,7 +7,7 @@ export default function TextArea({ handelText, displayText }) {
       <textarea
         id="task"
         name="task"
-        value={displayText}
+        // value={displayText}
         onChange={(event) => {
           handelText(event.target.value);
         }}
