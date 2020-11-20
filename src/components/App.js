@@ -28,7 +28,9 @@ export default function App() {
     //console.log(listItemEntry, listItemEntryCopy);
   };
 
-  const handelListEntry = (value) => {
+  //const handelListEntry = (value) => {
+  const handelListEntry = () => {
+    let value = document.getElementById("task").value;
     //let listItemEntryCopy = listItemEntry;
     if (value === " ") {
       return;
