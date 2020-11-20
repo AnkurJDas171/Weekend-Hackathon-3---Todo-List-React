@@ -16,6 +16,7 @@ export default function List({ taskList,handelEdit,handelDelete,saveEdit,textCha
               handelEdit={handelEdit}
               handelDelete={handelDelete}
               displayEditTextArea={element.edit}
+              taskEtidValue = {element.editValue}
               saveChanges={()=>saveEdit(index)}
               handelTextEdit={(value)=>textChange(index,value)}
             />

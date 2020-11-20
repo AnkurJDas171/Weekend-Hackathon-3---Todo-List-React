@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Button({handelClick}){
+export default function Button({isTextAreaEmpty,handelClick}){
 
 return (
 
   <>
-    <button id="btn" onClick={handelClick}>Save</button>
+    <button id="btn" disabled={!isTextAreaEmpty} onClick={handelClick}>Save</button>
   </>
 
 );

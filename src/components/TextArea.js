@@ -11,7 +11,7 @@ export default function TextArea({ handelText, displayText }) {
         onChange={(event) => {
           handelText(event.target.value);
         }}
-        //onChange={handelText}
+        //onChange={handelText()}
       ></textarea>
     </>
   );

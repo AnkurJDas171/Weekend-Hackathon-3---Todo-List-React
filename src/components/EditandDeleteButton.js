@@ -7,7 +7,8 @@ export default function EnDButtons({
   handelDelete,
   displayEditTextArea,
   saveChanges,
-  handelTextEdit
+  handelTextEdit,
+  taskEtidValue
 }) {
   return (
     <>
@@ -22,6 +23,7 @@ export default function EnDButtons({
         <EditandSave
           saveChanges={saveChanges}
           handelTextEdit={handelTextEdit}
+          isEditTextAreaEmpty={taskEtidValue}
         />
       )}
     </>

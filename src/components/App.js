@@ -77,12 +77,12 @@ export default function App() {
     <div id="main">
       {/* //Do not alter main div
 	//Please do not alter the functional component as tests depend on the type of component. */}
-      <TextArea
+    <TextArea
         id="task"
         handelText={handelListEntry}
         displayText={listItemEntry}
       />
-      <Button id="btn" handelClick={handelSaveButton} />
+      <Button id="btn" isTextAreaEmpty={listItemEntry} handelClick={handelSaveButton} />
       <List
         taskList={taskList}
         displayText={listItemEntry.value}
